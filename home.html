@@ -24,9 +24,18 @@
       data-bs-target="#search-off"
     >
       search
+    </button> 
+    
+    <button
+      class="btn btn-info"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#cart-off"
+    >
+      cart
     </button>
-    <div class="row" id="showdata"></div>
 
+    <div class="row" id="showdata"></div>
+<!-- search -->
     <div class="offcanvas offcanvas-top" style="height: 600px" id="search-off">
       <div class="offcanvas-header">
         <h1>search</h1>
@@ -39,6 +48,31 @@
         </form>
         <br /><br />
         <div class="row" id="searchdata"></div>
+      </div>
+    </div>
+
+    <!-- cart -->
+        <div class="offcanvas offcanvas-top" style="height: 600px" id="cart-off">
+      <div class="offcanvas-header">
+        <h1>Cart</h1><h1 id="amount">total</h1>
+        <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body" onsubmit="searchFun(event)">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>product</th>
+              <th>name</th>
+              <th>price</th>
+              <th>quantity</th>
+              <th>action</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+           
+          </tbody>
+        </table>
+       
       </div>
     </div>
 
