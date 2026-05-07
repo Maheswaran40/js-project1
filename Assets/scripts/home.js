@@ -2,7 +2,7 @@ var products = [
   {
     id: 1,
     name: "samsung",
-    price: 9999,
+    prize: 9999,
     color: "red",
     image: "./Assets/images/samsung.png",
   },
@@ -10,21 +10,21 @@ var products = [
   {
     id: 2,
     name: "vivo",
-    price: 19999,
+    prize: 19999,
     color: "gray",
     image: "./Assets/images/vivo.png",
   },
   {
     id: 3,
     name: "iphone",
-    price: 4999,
+    prize: 4999,
     color: "blue",
     image: "./Assets/images/iphone.png",
   },
   {
     id: 3,
     name: "iphone",
-    price: 49999,
+    prize: 49999,
     color: "blue",
     image: "./Assets/images/iphone.png",
   },
